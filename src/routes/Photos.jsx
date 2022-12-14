@@ -12,7 +12,7 @@ const Photos = () => {
 
   const deletePhoto = async (id) => {
     // TODO: answer here
-     await fetch(`http://localhost:3001/photos/${id}`, {
+     await fetch(`https://gallery-app-server.vercel.app/photos/${id}`, {
         method: 'DELETE',
       })
       .then((response) => response.json()) 
